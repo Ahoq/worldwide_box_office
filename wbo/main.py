@@ -88,7 +88,7 @@ class wbo:
                         mode = 'markers',
                         opacity = 1,
                         name = i,
-                        marker=dict(size=ndf[size])
+                        marker=dict(size=30)
                         )     
                 )
 
@@ -111,9 +111,9 @@ class wbo:
             showlegend =  True
         )
 
-        temp_file = tempfile.NamedTemporaryFile(suffix = '.html')
+        #temp_file = tempfile.NamedTemporaryFile(suffix = '.html')
         
-        s = plotly.offline.plot(m, filename=temp_file.name, auto_open=True)
+        return m
 
 if __name__ == '__main__':
     pass

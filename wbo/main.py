@@ -4,7 +4,6 @@ from datetime import datetime as dt
 import os
 import plotly.graph_objects as go
 import plotly
-from plotnine import *
 import tempfile
 from time import sleep
 

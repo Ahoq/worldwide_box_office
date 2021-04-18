@@ -9,7 +9,7 @@ with open("README.md","r") as fh:
 
 setup(
     name='wbo',
-    version='0.0.1',
+    version='0.0.5',
     description='Download and plot worldwide box office data!',
     packages=find_packages(),
     include_package_data=True,
@@ -18,8 +18,7 @@ setup(
         [console_scripts]
         wbo=wbo.cli:cli
     ''',
-    py_modules=['cli','main'],
-    package_dir={'wbo': ''},
     long_description=long_description,
-    long_descriptionn_content_type="text/markdown",
+    long_description_content_type="text/markdown",
+    author="Adnan Hoq",
 )

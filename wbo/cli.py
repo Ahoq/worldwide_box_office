@@ -1,5 +1,5 @@
 import click
-from bom.main import bom
+from wbo.main import wbo
 import lxml
 import pandas as pd
 from datetime import datetime as dt
@@ -27,7 +27,7 @@ def get_data(min_year, max_year):
     """
     Get the Data as csv.
     """
-    dk = bom()
+    dk = wbo()
     dm=dk.collect_bom(min_year=min_year,max_year=max_year)
     dm.to_csv(os.path.expanduser(f'~/Downloads/worldwide_box_office({min_year}-{max_year}).csv'),index=False)
 
@@ -43,7 +43,7 @@ def display_plot(min_year, max_year):
     """
     Display the data in a scatter plot.
     """
-    dk = bom()
+    dk = wbo()
     dm=dk.collect_bom(min_year=min_year,max_year=max_year)
     dm2=dk.get_top_movies()
     dk.plot_gross_scatter()

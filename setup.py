@@ -5,13 +5,13 @@ with open('requirements.txt', 'r') as file:
     installRequires = [x for x in installRequires if x != '']
 
 setup(
-    name='bom',
+    name='wbo',
     version='0.001',
     packages=find_packages(),
     include_package_data=True,
     install_requires=installRequires,
     entry_points='''
         [console_scripts]
-        bom=bom.cli:cli
+        wbo=wbo.cli:cli
     ''',
 )

@@ -10,7 +10,7 @@ from time import sleep
 
 
 
-class bom:
+class wbo:
     
     def __init__(self,url="https://www.boxofficemojo.com/year/world/"):
         self.url=url
@@ -52,7 +52,6 @@ class bom:
         
         print("Data Collection Compelete!")
         self.d = df2.copy()
-        print("Saving the data as a csv file in your Download folder!")        
         return self.d
 
     def get_top_movies(self,column='worldwide_gross',number=10):
@@ -115,8 +114,6 @@ class bom:
 
         temp_file = tempfile.NamedTemporaryFile(suffix = '.html')
         
-        sleep(5)
-
         s = plotly.offline.plot(m, filename=temp_file.name, auto_open=True)
 
 if __name__ == '__main__':

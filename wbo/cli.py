@@ -1,5 +1,5 @@
 import click
-from wbo.main import wbo
+from main import wbo
 import lxml
 import pandas as pd
 from datetime import datetime as dt

@@ -94,20 +94,20 @@ class wbo:
 
         m=fig1.update_layout(
 
-            xaxis={'titlefont':{'color':'#858585'},'linecolor':'#000000',
-                   'tickfont':{'color':'#858585','size':18},'showgrid':False,'showline':False},
+            xaxis={'title':'Worldwide','titlefont':{'color':'#858585'},'linecolor':'#000000',
+                   'tickfont':{'color':'#858585','size':20},'showgrid':False,'showline':False},
 
-            yaxis={'titlefont':{'color':'#858585','size':20}, 'tickfont':{'color':'#858585','size':18},
+            yaxis={'title':'Domestic','titlefont':{'color':'#858585','size':20}, 'tickfont':{'color':'#858585','size':18},
                    'showgrid':False},
             margin={'l': 80, 'b': 40, 't': 30, 'r': 40},
-            title={'text': None},#, 'font':{'color':'#2c4a91', 'size':26},'yanchor':"top",'xanchor':"left",'y':.98,'x':.01},
+            title={'text': '<b>Worldwide V Domestic Box Office (Top 10)<b>', 'font':{'color':'#2c4a91', 'size':26},'yanchor':"top",'xanchor':"left",'y':.98,'x':.01},
 #             legend={'font':{'size':14, 'color':'#333'},'yanchor':"middle",'xanchor':"right",'y':.5,'orientation':'v',
 #                     'font':{'size':16,'color':'#000000'}},
             template = 'none',
             #legend_title_text='',
             hovermode='closest',
-            width = 1850,
-            height = 950,
+            width = 1400,
+            height = 750,
             showlegend =  True
         )
 

@@ -95,7 +95,7 @@ class wbo:
         m=fig1.update_layout(
 
             xaxis={'titlefont':{'color':'#858585'},'linecolor':'#000000',
-                   'tickfont':{'color':'#858585','size':18},'showgrid':False},
+                   'tickfont':{'color':'#858585','size':18},'showgrid':False,'showline':False},
 
             yaxis={'titlefont':{'color':'#858585','size':20}, 'tickfont':{'color':'#858585','size':18},
                    'showgrid':False},

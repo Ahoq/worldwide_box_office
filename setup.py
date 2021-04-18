@@ -9,7 +9,7 @@ with open("README.md","r") as fh:
 
 setup(
     name='wbo',
-    version='0.0.5',
+    version='0.0.6',
     description='Download and plot worldwide box office data!',
     packages=find_packages(),
     include_package_data=True,

@@ -1,0 +1,4 @@
+pandas==1.2.3
+plotly==4.14.3
+click==7.1.2
+lxml==4.6.3

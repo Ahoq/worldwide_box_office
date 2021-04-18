@@ -55,7 +55,7 @@ def display_plot(min_year, max_year):
     dm=dk.collect_bom(min_year=min_year,max_year=max_year)
     dm2=dk.get_top_movies()
     m=dk.plot_gross_scatter()
-    s = plotly.offline.plot(m, filename=os.path.expanduser(f'~/Downloads/worldwide_box_office({min_year}-{max_year}).html'), auto_open=True)
+    s = plotly.offline.plot(m, filename=os.path.expanduser(f"~/Downloads/worldwide_box_office({min_year}-{max_year}).html"), auto_open=True)
 
 
 if __name__ == '__main__':

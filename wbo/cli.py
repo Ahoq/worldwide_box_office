@@ -6,15 +6,21 @@ from datetime import datetime as dt
 import os
 import plotly.graph_objects as go
 import plotly
-from plotnine import *
 import tempfile
 from time import sleep
 
 @click.group()
 def cli():
     """
+    WBO
     Get box office mojo's worldwide box office data.
     Plot the data.
+    Usage:
+    Type "wbo get-data" or "wbo display-plot" in the command line. These will run the two commands with their default values.
+    You can also specify the earliest year and the latest year like this:
+    "wbo get-data -min=2005 -max=2020"
+    
+    by Adnan Hoq
     """
 
 
